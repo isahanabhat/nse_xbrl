@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xmlns:in-bse-fin="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin" xmlns:in-bse-fin-roles="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles" xmlns:in-bse-fin-ent="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin/in-bse-fin-ent" xmlns:in-bse-fin-type="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-types" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:net="http://www.xbrl.org/2009/role/net" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xl="http://www.xbrl.org/2003/XLink">
+<link:schemaRef xlink:type="simple" xlink:href="Ind-AS_entry_point_2020-03-31.xsd"/>
+<xbrli:context id="OneD"><xbrli:entity><xbrli:identifier scheme="http://www.nseindia.com/NSESymbol">ASIANPAINT</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2023-07-01</xbrli:startDate><xbrli:endDate>2023-09-30</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FourD"><xbrli:entity><xbrli:identifier scheme="http://www.nseindia.com/NSESymbol">ASIANPAINT</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2023-07-01</xbrli:startDate><xbrli:endDate>2023-09-30</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="OneOperatingExpenses01D"><xbrli:entity><xbrli:identifier scheme="http://www.nseindia.com/NSESymbol">ASIANPAINT</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2023-07-01</xbrli:startDate><xbrli:endDate>2023-09-30</xbrli:endDate></xbrli:period><xbrli:scenario><xbrldi:explicitMember dimension="in-bse-fin:DetailsOfOtherExpensesAxis">in-bse-fin:OneOperatingExpenses01Member</xbrldi:explicitMember></xbrli:scenario></xbrli:context>
+<xbrli:context id="FourOperatingExpenses01D"><xbrli:entity><xbrli:identifier scheme="http://www.nseindia.com/NSESymbol">ASIANPAINT</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2023-07-01</xbrli:startDate><xbrli:endDate>2023-09-30</xbrli:endDate></xbrli:period><xbrli:scenario><xbrldi:explicitMember dimension="in-bse-fin:DetailsOfOtherExpensesAxis">in-bse-fin:FourOperatingExpenses01Member</xbrldi:explicitMember></xbrli:scenario></xbrli:context>
+<xbrli:context id="OneI"><xbrli:entity><xbrli:identifier scheme="http://www.nseindia.com/NSESymbol">ASIANPAINT</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:instant>2023-09-30</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="OneItemsThatWillNotBeReclassifiedToProfitAndLoss01D"><xbrli:entity><xbrli:identifier scheme="http://www.nseindia.com/NSESymbol">ASIANPAINT</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2023-07-01</xbrli:startDate><xbrli:endDate>2023-09-30</xbrli:endDate></xbrli:period><xbrli:scenario><xbrldi:typedMember dimension="in-bse-fin:ItemsThatWillNotBeReclassifiedToProfitAndLossAxis"><ItemsThatWillNotBeReclassifiedToProfitAndLossDomain>in-bse-fin:OneItemsThatWillNotBeReclassifiedToProfitAndLoss01Member</ItemsThatWillNotBeReclassifiedToProfitAndLossDomain></xbrldi:typedMember></xbrli:scenario></xbrli:context>
+<xbrli:context id="FourItemsThatWillNotBeReclassifiedToProfitAndLoss01D"><xbrli:entity><xbrli:identifier scheme="http://www.nseindia.com/NSESymbol">ASIANPAINT</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2023-07-01</xbrli:startDate><xbrli:endDate>2023-09-30</xbrli:endDate></xbrli:period><xbrli:scenario><xbrldi:typedMember dimension="in-bse-fin:ItemsThatWillNotBeReclassifiedToProfitAndLossAxis"><ItemsThatWillNotBeReclassifiedToProfitAndLossDomain>in-bse-fin:FourItemsThatWillNotBeReclassifiedToProfitAndLoss01Member</ItemsThatWillNotBeReclassifiedToProfitAndLossDomain></xbrldi:typedMember></xbrli:scenario></xbrli:context>
+<xbrli:context id="OneItemsThatWillBeReclassifiedToProfitAndLoss01D"><xbrli:entity><xbrli:identifier scheme="http://www.nseindia.com/NSESymbol">ASIANPAINT</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2023-07-01</xbrli:startDate><xbrli:endDate>2023-09-30</xbrli:endDate></xbrli:period><xbrli:scenario><xbrldi:typedMember dimension="in-bse-fin:ItemsThatWillBeReclassifiedToProfitAndLossAxis"><ItemsThatWillBeReclassifiedToProfitAndLossDomain>in-bse-fin:OneItemsThatWillBeReclassifiedToProfitAndLoss01Member</ItemsThatWillBeReclassifiedToProfitAndLossDomain></xbrldi:typedMember></xbrli:scenario></xbrli:context>
+<xbrli:context id="FourItemsThatWillBeReclassifiedToProfitAndLoss01D"><xbrli:entity><xbrli:identifier scheme="http://www.nseindia.com/NSESymbol">ASIANPAINT</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2023-07-01</xbrli:startDate><xbrli:endDate>2023-09-30</xbrli:endDate></xbrli:period><xbrli:scenario><xbrldi:typedMember dimension="in-bse-fin:ItemsThatWillBeReclassifiedToProfitAndLossAxis"><ItemsThatWillBeReclassifiedToProfitAndLossDomain>in-bse-fin:FourItemsThatWillBeReclassifiedToProfitAndLoss01Member</ItemsThatWillBeReclassifiedToProfitAndLossDomain></xbrldi:typedMember></xbrli:scenario></xbrli:context>
+<xbrli:unit id="INR"><xbrli:measure>iso4217:INR</xbrli:measure></xbrli:unit><xbrli:unit id="pure"><xbrli:measure>xbrli:pure</xbrli:measure></xbrli:unit><xbrli:unit id="shares"><xbrli:measure>xbrli:shares</xbrli:measure></xbrli:unit><xbrli:unit id="INRPerShare"><xbrli:divide><xbrli:unitNumerator><xbrli:measure>iso4217:INR</xbrli:measure></xbrli:unitNumerator><xbrli:unitDenominator><xbrli:measure>xbrli:shares</xbrli:measure></xbrli:unitDenominator></xbrli:divide></xbrli:unit>
+<in-bse-fin:ScripCode contextRef="OneD">500820</in-bse-fin:ScripCode>
+<in-bse-fin:Symbol contextRef="OneD">ASIANPAINT</in-bse-fin:Symbol>
+<in-bse-fin:MSEISymbol contextRef="OneD">NOTLISTED</in-bse-fin:MSEISymbol>
+<in-bse-fin:NameOfTheCompany contextRef="OneD">Asian Paints Limited</in-bse-fin:NameOfTheCompany>
+<in-bse-fin:ClassOfSecurity contextRef="OneD">Equity</in-bse-fin:ClassOfSecurity>
+<in-bse-fin:DateOfStartOfFinancialYear contextRef="OneD">2023-04-01</in-bse-fin:DateOfStartOfFinancialYear>
+<in-bse-fin:DateOfEndOfFinancialYear contextRef="OneD">2024-03-31</in-bse-fin:DateOfEndOfFinancialYear>
+<in-bse-fin:DateOfBoardMeetingWhenFinancialResultsWereApproved contextRef="OneD">2023-10-26</in-bse-fin:DateOfBoardMeetingWhenFinancialResultsWereApproved>
+<in-bse-fin:DateOnWhichPriorIntimationOfTheMeetingForConsideringFinancialResultsWasInformedToTheExchange contextRef="OneD">2023-09-15</in-bse-fin:DateOnWhichPriorIntimationOfTheMeetingForConsideringFinancialResultsWasInformedToTheExchange>
+<in-bse-fin:DescriptionOfPresentationCurrency contextRef="OneD">INR</in-bse-fin:DescriptionOfPresentationCurrency>
+<in-bse-fin:LevelOfRoundingUsedInFinancialStatements contextRef="OneD">Crores</in-bse-fin:LevelOfRoundingUsedInFinancialStatements>
+<in-bse-fin:ReportingQuarter contextRef="OneD">Half yearly</in-bse-fin:ReportingQuarter>
+<in-bse-fin:StartTimeOfBoardMeeting contextRef="OneD">10:30:00</in-bse-fin:StartTimeOfBoardMeeting>
+<in-bse-fin:EndTimeOfBoardMeeting contextRef="OneD">14:59:00</in-bse-fin:EndTimeOfBoardMeeting>
+<in-bse-fin:DateOfStartOfBoardMeeting contextRef="OneD">2023-10-26</in-bse-fin:DateOfStartOfBoardMeeting>
+<in-bse-fin:DateOfEndOfBoardMeeting contextRef="OneD">2023-10-26</in-bse-fin:DateOfEndOfBoardMeeting>
+<in-bse-fin:WhetherCashFlowStatementIsApplicableOnCompany contextRef="OneD">true</in-bse-fin:WhetherCashFlowStatementIsApplicableOnCompany>
+<in-bse-fin:TypeOfCashFlowStatement contextRef="OneD">Cash Flow Indirect</in-bse-fin:TypeOfCashFlowStatement>
+<in-bse-fin:DeclarationOfUnmodifiedOpinionOrStatementOnImpactOfAuditQualification contextRef="OneD">Not applicable</in-bse-fin:DeclarationOfUnmodifiedOpinionOrStatementOnImpactOfAuditQualification>
+<in-bse-fin:IsCompanyReportingMultisegmentOrSingleSegment contextRef="OneD">Single segment</in-bse-fin:IsCompanyReportingMultisegmentOrSingleSegment>
+<in-bse-fin:DescriptionOfSingleSegment contextRef="OneD">Paints and Home Décor</in-bse-fin:DescriptionOfSingleSegment>
+<in-bse-fin:DateOfStartOfReportingPeriod contextRef="OneD">2023-07-01</in-bse-fin:DateOfStartOfReportingPeriod>
+<in-bse-fin:DateOfEndOfReportingPeriod contextRef="OneD">2023-09-30</in-bse-fin:DateOfEndOfReportingPeriod>
+<in-bse-fin:WhetherResultsAreAuditedOrUnaudited contextRef="OneD">Unaudited</in-bse-fin:WhetherResultsAreAuditedOrUnaudited>
+<in-bse-fin:NatureOfReportStandaloneConsolidated contextRef="OneD">Consolidated</in-bse-fin:NatureOfReportStandaloneConsolidated>
+<in-bse-fin:RevenueFromOperations contextRef="OneD" unitRef="INR" decimals="-7">84785700000.00</in-bse-fin:RevenueFromOperations>
+<in-bse-fin:OtherIncome contextRef="OneD" unitRef="INR" decimals="-7">1652000000.00</in-bse-fin:OtherIncome>
+<in-bse-fin:Income contextRef="OneD" unitRef="INR" decimals="-7">86437700000.00</in-bse-fin:Income>
+<in-bse-fin:CostOfMaterialsConsumed contextRef="OneD" unitRef="INR" decimals="-7">39182700000.00</in-bse-fin:CostOfMaterialsConsumed>
+<in-bse-fin:PurchasesOfStockInTrade contextRef="OneD" unitRef="INR" decimals="-7">10360000000.00</in-bse-fin:PurchasesOfStockInTrade>
+<in-bse-fin:ChangesInInventoriesOfFinishedGoodsWorkInProgressAndStockInTrade contextRef="OneD" unitRef="INR" decimals="-7">-1528000000.00</in-bse-fin:ChangesInInventoriesOfFinishedGoodsWorkInProgressAndStockInTrade>
+<in-bse-fin:EmployeeBenefitExpense contextRef="OneD" unitRef="INR" decimals="-7">5961100000.00</in-bse-fin:EmployeeBenefitExpense>
+<in-bse-fin:FinanceCosts contextRef="OneD" unitRef="INR" decimals="-7">509000000.00</in-bse-fin:FinanceCosts>
+<in-bse-fin:DepreciationDepletionAndAmortisationExpense contextRef="OneD" unitRef="INR" decimals="-7">2087200000.00</in-bse-fin:DepreciationDepletionAndAmortisationExpense>
+<in-bse-fin:OtherExpenses contextRef="OneD" unitRef="INR" decimals="-7">13647600000.00</in-bse-fin:OtherExpenses>
+<in-bse-fin:Expenses contextRef="OneD" unitRef="INR" decimals="-7">70219600000.00</in-bse-fin:Expenses>
+<in-bse-fin:ProfitBeforeExceptionalItemsAndTax contextRef="OneD" unitRef="INR" decimals="-7">16218100000.00</in-bse-fin:ProfitBeforeExceptionalItemsAndTax>
+<in-bse-fin:ExceptionalItemsBeforeTax contextRef="OneD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ExceptionalItemsBeforeTax>
+<in-bse-fin:ProfitBeforeTax contextRef="OneD" unitRef="INR" decimals="-7">16218100000.00</in-bse-fin:ProfitBeforeTax>
+<in-bse-fin:CurrentTax contextRef="OneD" unitRef="INR" decimals="-7">4082500000.00</in-bse-fin:CurrentTax>
+<in-bse-fin:DeferredTax contextRef="OneD" unitRef="INR" decimals="-7">103000000.00</in-bse-fin:DeferredTax>
+<in-bse-fin:TaxExpense contextRef="OneD" unitRef="INR" decimals="-7">4185500000.00</in-bse-fin:TaxExpense>
+<in-bse-fin:NetMovementInRegulatoryDeferralAccountBalancesRelatedToProfitOrLossAndTheRelatedDeferredTaxMovement contextRef="OneD" unitRef="INR" decimals="-7">0.00</in-bse-fin:NetMovementInRegulatoryDeferralAccountBalancesRelatedToProfitOrLossAndTheRelatedDeferredTaxMovement>
+<in-bse-fin:ProfitLossForPeriodFromContinuingOperations contextRef="OneD" unitRef="INR" decimals="-7">12032600000.00</in-bse-fin:ProfitLossForPeriodFromContinuingOperations>
+<in-bse-fin:ProfitLossFromDiscontinuedOperationsBeforeTax contextRef="OneD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProfitLossFromDiscontinuedOperationsBeforeTax>
+<in-bse-fin:TaxExpenseOfDiscontinuedOperations contextRef="OneD" unitRef="INR" decimals="-7">0.00</in-bse-fin:TaxExpenseOfDiscontinuedOperations>
+<in-bse-fin:ProfitLossFromDiscontinuedOperationsAfterTax contextRef="OneD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProfitLossFromDiscontinuedOperationsAfterTax>
+<in-bse-fin:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod contextRef="OneD" unitRef="INR" decimals="-7">291300000.00</in-bse-fin:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod>
+<in-bse-fin:ProfitLossForPeriod contextRef="OneD" unitRef="INR" decimals="-7">12323900000.00</in-bse-fin:ProfitLossForPeriod>
+<in-bse-fin:OtherComprehensiveIncomeNetOfTaxes contextRef="OneD" unitRef="INR" decimals="-7">-6300000.00</in-bse-fin:OtherComprehensiveIncomeNetOfTaxes>
+<in-bse-fin:ComprehensiveIncomeForThePeriod contextRef="OneD" unitRef="INR" decimals="-7">12317600000.00</in-bse-fin:ComprehensiveIncomeForThePeriod>
+<in-bse-fin:ProfitOrLossAttributableToOwnersOfParent contextRef="OneD" unitRef="INR" decimals="-7">12054200000.00</in-bse-fin:ProfitOrLossAttributableToOwnersOfParent>
+<in-bse-fin:ProfitOrLossAttributableToNonControllingInterests contextRef="OneD" unitRef="INR" decimals="-7">269700000.00</in-bse-fin:ProfitOrLossAttributableToNonControllingInterests>
+<in-bse-fin:ComprehensiveIncomeForThePeriodAttributableToOwnersOfParent contextRef="OneD" unitRef="INR" decimals="-7">12051600000.00</in-bse-fin:ComprehensiveIncomeForThePeriodAttributableToOwnersOfParent>
+<in-bse-fin:ComprehensiveIncomeForThePeriodAttributableToOwnersOfParentNonControllingInterests contextRef="OneD" unitRef="INR" decimals="-7">266000000.00</in-bse-fin:ComprehensiveIncomeForThePeriodAttributableToOwnersOfParentNonControllingInterests>
+<in-bse-fin:PaidUpValueOfEquityShareCapital contextRef="OneD" unitRef="INR" decimals="-7">959200000.00</in-bse-fin:PaidUpValueOfEquityShareCapital>
+<in-bse-fin:FaceValueOfEquityShareCapital contextRef="OneD" unitRef="INRPerShare" decimals="INF">1</in-bse-fin:FaceValueOfEquityShareCapital>
+<in-bse-fin:BasicEarningsLossPerShareFromContinuingOperations contextRef="OneD" unitRef="INRPerShare" decimals="INF">12.57</in-bse-fin:BasicEarningsLossPerShareFromContinuingOperations>
+<in-bse-fin:DilutedEarningsLossPerShareFromContinuingOperations contextRef="OneD" unitRef="INRPerShare" decimals="INF">12.57</in-bse-fin:DilutedEarningsLossPerShareFromContinuingOperations>
+<in-bse-fin:BasicEarningsLossPerShareFromDiscontinuedOperations contextRef="OneD" unitRef="INRPerShare" decimals="INF">0.00</in-bse-fin:BasicEarningsLossPerShareFromDiscontinuedOperations>
+<in-bse-fin:DilutedEarningsLossPerShareFromDiscontinuedOperations contextRef="OneD" unitRef="INRPerShare" decimals="INF">0.00</in-bse-fin:DilutedEarningsLossPerShareFromDiscontinuedOperations>
+<in-bse-fin:BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations contextRef="OneD" unitRef="INRPerShare" decimals="INF">12.57</in-bse-fin:BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations>
+<in-bse-fin:DilutedEarningsLossPerShareFromContinuingAndDiscontinuedOperations contextRef="OneD" unitRef="INRPerShare" decimals="INF">12.57</in-bse-fin:DilutedEarningsLossPerShareFromContinuingAndDiscontinuedOperations>
+<in-bse-fin:DisclosureOfNotesOnFinancialResultsExplanatoryTextBlock contextRef="OneD">Please refer to notes uploaded for Consolidated Financial Results on BSE and NSE for the quarter and half year ended 30th September, 23. Additionally, the Group is primarily engaged in the business of ‘Paints and Home Décor’. There is no separate reportable segment as per Ind AS 108 – Operating Segments.</in-bse-fin:DisclosureOfNotesOnFinancialResultsExplanatoryTextBlock>
+<in-bse-fin:IsCompanyReportingMultisegmentOrSingleSegment contextRef="FourD">Single segment</in-bse-fin:IsCompanyReportingMultisegmentOrSingleSegment>
+<in-bse-fin:DateOfStartOfReportingPeriod contextRef="FourD">2023-04-01</in-bse-fin:DateOfStartOfReportingPeriod>
+<in-bse-fin:DateOfEndOfReportingPeriod contextRef="FourD">2023-09-30</in-bse-fin:DateOfEndOfReportingPeriod>
+<in-bse-fin:WhetherResultsAreAuditedOrUnaudited contextRef="FourD">Unaudited</in-bse-fin:WhetherResultsAreAuditedOrUnaudited>
+<in-bse-fin:NatureOfReportStandaloneConsolidated contextRef="FourD">Consolidated</in-bse-fin:NatureOfReportStandaloneConsolidated>
+<in-bse-fin:RevenueFromOperations contextRef="FourD" unitRef="INR" decimals="-7">176608800000.00</in-bse-fin:RevenueFromOperations>
+<in-bse-fin:OtherIncome contextRef="FourD" unitRef="INR" decimals="-7">3622700000.00</in-bse-fin:OtherIncome>
+<in-bse-fin:Income contextRef="FourD" unitRef="INR" decimals="-7">180231500000.00</in-bse-fin:Income>
+<in-bse-fin:CostOfMaterialsConsumed contextRef="FourD" unitRef="INR" decimals="-7">79893100000.00</in-bse-fin:CostOfMaterialsConsumed>
+<in-bse-fin:PurchasesOfStockInTrade contextRef="FourD" unitRef="INR" decimals="-7">18927900000.00</in-bse-fin:PurchasesOfStockInTrade>
+<in-bse-fin:ChangesInInventoriesOfFinishedGoodsWorkInProgressAndStockInTrade contextRef="FourD" unitRef="INR" decimals="-7">1597600000.00</in-bse-fin:ChangesInInventoriesOfFinishedGoodsWorkInProgressAndStockInTrade>
+<in-bse-fin:EmployeeBenefitExpense contextRef="FourD" unitRef="INR" decimals="-7">11417900000.00</in-bse-fin:EmployeeBenefitExpense>
+<in-bse-fin:FinanceCosts contextRef="FourD" unitRef="INR" decimals="-7">966500000.00</in-bse-fin:FinanceCosts>
+<in-bse-fin:DepreciationDepletionAndAmortisationExpense contextRef="FourD" unitRef="INR" decimals="-7">4070400000.00</in-bse-fin:DepreciationDepletionAndAmortisationExpense>
+<in-bse-fin:OtherExpenses contextRef="FourD" unitRef="INR" decimals="-7">26397100000.00</in-bse-fin:OtherExpenses>
+<in-bse-fin:Expenses contextRef="FourD" unitRef="INR" decimals="-7">143270500000.00</in-bse-fin:Expenses>
+<in-bse-fin:ProfitBeforeExceptionalItemsAndTax contextRef="FourD" unitRef="INR" decimals="-7">36961000000.00</in-bse-fin:ProfitBeforeExceptionalItemsAndTax>
+<in-bse-fin:ExceptionalItemsBeforeTax contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ExceptionalItemsBeforeTax>
+<in-bse-fin:ProfitBeforeTax contextRef="FourD" unitRef="INR" decimals="-7">36961000000.00</in-bse-fin:ProfitBeforeTax>
+<in-bse-fin:CurrentTax contextRef="FourD" unitRef="INR" decimals="-7">9347400000.00</in-bse-fin:CurrentTax>
+<in-bse-fin:DeferredTax contextRef="FourD" unitRef="INR" decimals="-7">139300000.00</in-bse-fin:DeferredTax>
+<in-bse-fin:TaxExpense contextRef="FourD" unitRef="INR" decimals="-7">9486700000.00</in-bse-fin:TaxExpense>
+<in-bse-fin:NetMovementInRegulatoryDeferralAccountBalancesRelatedToProfitOrLossAndTheRelatedDeferredTaxMovement contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:NetMovementInRegulatoryDeferralAccountBalancesRelatedToProfitOrLossAndTheRelatedDeferredTaxMovement>
+<in-bse-fin:ProfitLossForPeriodFromContinuingOperations contextRef="FourD" unitRef="INR" decimals="-7">27474300000.00</in-bse-fin:ProfitLossForPeriodFromContinuingOperations>
+<in-bse-fin:ProfitLossFromDiscontinuedOperationsBeforeTax contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProfitLossFromDiscontinuedOperationsBeforeTax>
+<in-bse-fin:TaxExpenseOfDiscontinuedOperations contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:TaxExpenseOfDiscontinuedOperations>
+<in-bse-fin:ProfitLossFromDiscontinuedOperationsAfterTax contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProfitLossFromDiscontinuedOperationsAfterTax>
+<in-bse-fin:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod contextRef="FourD" unitRef="INR" decimals="-7">598000000.00</in-bse-fin:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod>
+<in-bse-fin:ProfitLossForPeriod contextRef="FourD" unitRef="INR" decimals="-7">28072300000.00</in-bse-fin:ProfitLossForPeriod>
+<in-bse-fin:OtherComprehensiveIncomeNetOfTaxes contextRef="FourD" unitRef="INR" decimals="-7">599400000.00</in-bse-fin:OtherComprehensiveIncomeNetOfTaxes>
+<in-bse-fin:ComprehensiveIncomeForThePeriod contextRef="FourD" unitRef="INR" decimals="-7">28671700000.00</in-bse-fin:ComprehensiveIncomeForThePeriod>
+<in-bse-fin:ProfitOrLossAttributableToOwnersOfParent contextRef="FourD" unitRef="INR" decimals="-7">27557900000.00</in-bse-fin:ProfitOrLossAttributableToOwnersOfParent>
+<in-bse-fin:ProfitOrLossAttributableToNonControllingInterests contextRef="FourD" unitRef="INR" decimals="-7">514400000.00</in-bse-fin:ProfitOrLossAttributableToNonControllingInterests>
+<in-bse-fin:ComprehensiveIncomeForThePeriodAttributableToOwnersOfParent contextRef="FourD" unitRef="INR" decimals="-7">28171600000.00</in-bse-fin:ComprehensiveIncomeForThePeriodAttributableToOwnersOfParent>
+<in-bse-fin:ComprehensiveIncomeForThePeriodAttributableToOwnersOfParentNonControllingInterests contextRef="FourD" unitRef="INR" decimals="-7">500100000.00</in-bse-fin:ComprehensiveIncomeForThePeriodAttributableToOwnersOfParentNonControllingInterests>
+<in-bse-fin:PaidUpValueOfEquityShareCapital contextRef="FourD" unitRef="INR" decimals="-7">959200000.00</in-bse-fin:PaidUpValueOfEquityShareCapital>
+<in-bse-fin:FaceValueOfEquityShareCapital contextRef="FourD" unitRef="INRPerShare" decimals="INF">1</in-bse-fin:FaceValueOfEquityShareCapital>
+<in-bse-fin:BasicEarningsLossPerShareFromContinuingOperations contextRef="FourD" unitRef="INRPerShare" decimals="INF">28.74</in-bse-fin:BasicEarningsLossPerShareFromContinuingOperations>
+<in-bse-fin:DilutedEarningsLossPerShareFromContinuingOperations contextRef="FourD" unitRef="INRPerShare" decimals="INF">28.74</in-bse-fin:DilutedEarningsLossPerShareFromContinuingOperations>
+<in-bse-fin:BasicEarningsLossPerShareFromDiscontinuedOperations contextRef="FourD" unitRef="INRPerShare" decimals="INF">0.00</in-bse-fin:BasicEarningsLossPerShareFromDiscontinuedOperations>
+<in-bse-fin:DilutedEarningsLossPerShareFromDiscontinuedOperations contextRef="FourD" unitRef="INRPerShare" decimals="INF">0.00</in-bse-fin:DilutedEarningsLossPerShareFromDiscontinuedOperations>
+<in-bse-fin:BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations contextRef="FourD" unitRef="INRPerShare" decimals="INF">28.74</in-bse-fin:BasicEarningsLossPerShareFromContinuingAndDiscontinuedOperations>
+<in-bse-fin:DilutedEarningsLossPerShareFromContinuingAndDiscontinuedOperations contextRef="FourD" unitRef="INRPerShare" decimals="INF">28.74</in-bse-fin:DilutedEarningsLossPerShareFromContinuingAndDiscontinuedOperations>
+<in-bse-fin:DescriptionOfOtherExpenses contextRef="OneOperatingExpenses01D">Other Expenses</in-bse-fin:DescriptionOfOtherExpenses>
+<in-bse-fin:OtherExpenses contextRef="OneOperatingExpenses01D" unitRef="INR" decimals="-7">13647600000.00</in-bse-fin:OtherExpenses>
+<in-bse-fin:DescriptionOfOtherExpenses contextRef="FourOperatingExpenses01D">Other Expenses</in-bse-fin:DescriptionOfOtherExpenses>
+<in-bse-fin:OtherExpenses contextRef="FourOperatingExpenses01D" unitRef="INR" decimals="-7">26397100000.00</in-bse-fin:OtherExpenses>
+<in-bse-fin:NonControllingInterest contextRef="OneI" unitRef="INR" decimals="-7">6159600000.00</in-bse-fin:NonControllingInterest>
+<in-bse-fin:PropertyPlantAndEquipment contextRef="OneI" unitRef="INR" decimals="-7">55026300000.00</in-bse-fin:PropertyPlantAndEquipment>
+<in-bse-fin:CapitalWorkInProgress contextRef="OneI" unitRef="INR" decimals="-7">19994800000.00</in-bse-fin:CapitalWorkInProgress>
+<in-bse-fin:Goodwill contextRef="OneI" unitRef="INR" decimals="-7">3978700000.00</in-bse-fin:Goodwill>
+<in-bse-fin:OtherIntangibleAssets contextRef="OneI" unitRef="INR" decimals="-7">4029900000.00</in-bse-fin:OtherIntangibleAssets>
+<in-bse-fin:InvestmentsAccountedForUsingEquityMethod contextRef="OneI" unitRef="INR" decimals="-7">5759200000.00</in-bse-fin:InvestmentsAccountedForUsingEquityMethod>
+<in-bse-fin:NoncurrentInvestments contextRef="OneI" unitRef="INR" decimals="-7">8249800000.00</in-bse-fin:NoncurrentInvestments>
+<in-bse-fin:TradeReceivablesNoncurrent contextRef="OneI" unitRef="INR" decimals="-7">20400000.00</in-bse-fin:TradeReceivablesNoncurrent>
+<in-bse-fin:LoansNoncurrent contextRef="OneI" unitRef="INR" decimals="-7">0.00</in-bse-fin:LoansNoncurrent>
+<in-bse-fin:OtherNoncurrentFinancialAssets contextRef="OneI" unitRef="INR" decimals="-7">4690000000.00</in-bse-fin:OtherNoncurrentFinancialAssets>
+<in-bse-fin:NoncurrentFinancialAssets contextRef="OneI" unitRef="INR" decimals="-7">12960200000.00</in-bse-fin:NoncurrentFinancialAssets>
+<in-bse-fin:DeferredTaxAssetsNet contextRef="OneI" unitRef="INR" decimals="-7">254800000.00</in-bse-fin:DeferredTaxAssetsNet>
+<in-bse-fin:OtherNoncurrentAssets contextRef="OneI" unitRef="INR" decimals="-7">5787900000.00</in-bse-fin:OtherNoncurrentAssets>
+<in-bse-fin:NoncurrentAssets contextRef="OneI" unitRef="INR" decimals="-7">107791800000.00</in-bse-fin:NoncurrentAssets>
+<in-bse-fin:Inventories contextRef="OneI" unitRef="INR" decimals="-7">60815600000.00</in-bse-fin:Inventories>
+<in-bse-fin:CurrentInvestments contextRef="OneI" unitRef="INR" decimals="-7">32404300000.00</in-bse-fin:CurrentInvestments>
+<in-bse-fin:TradeReceivablesCurrent contextRef="OneI" unitRef="INR" decimals="-7">44469400000.00</in-bse-fin:TradeReceivablesCurrent>
+<in-bse-fin:CashAndCashEquivalents contextRef="OneI" unitRef="INR" decimals="-7">5530400000.00</in-bse-fin:CashAndCashEquivalents>
+<in-bse-fin:BankBalanceOtherThanCashAndCashEquivalents contextRef="OneI" unitRef="INR" decimals="-7">2054200000.00</in-bse-fin:BankBalanceOtherThanCashAndCashEquivalents>
+<in-bse-fin:LoansCurrent contextRef="OneI" unitRef="INR" decimals="-7">0.00</in-bse-fin:LoansCurrent>
+<in-bse-fin:OtherCurrentFinancialAssets contextRef="OneI" unitRef="INR" decimals="-7">13877300000.00</in-bse-fin:OtherCurrentFinancialAssets>
+<in-bse-fin:CurrentFinancialAssets contextRef="OneI" unitRef="INR" decimals="-7">98335600000.00</in-bse-fin:CurrentFinancialAssets>
+<in-bse-fin:OtherCurrentAssets contextRef="OneI" unitRef="INR" decimals="-7">7277100000.00</in-bse-fin:OtherCurrentAssets>
+<in-bse-fin:CurrentAssets contextRef="OneI" unitRef="INR" decimals="-7">166428300000.00</in-bse-fin:CurrentAssets>
+<in-bse-fin:NoncurrentAssetsClassifiedAsHeldForSale contextRef="OneI" unitRef="INR" decimals="-7">0.00</in-bse-fin:NoncurrentAssetsClassifiedAsHeldForSale>
+<in-bse-fin:Assets contextRef="OneI" unitRef="INR" decimals="-7">274220100000.00</in-bse-fin:Assets>
+<in-bse-fin:EquityShareCapital contextRef="OneI" unitRef="INR" decimals="-7">959200000.00</in-bse-fin:EquityShareCapital>
+<in-bse-fin:OtherEquity contextRef="OneI" unitRef="INR" decimals="-7">164660300000.00</in-bse-fin:OtherEquity>
+<in-bse-fin:EquityAttributableToOwnersOfParent contextRef="OneI" unitRef="INR" decimals="-7">165619500000.00</in-bse-fin:EquityAttributableToOwnersOfParent>
+<in-bse-fin:Equity contextRef="OneI" unitRef="INR" decimals="-7">171779100000.00</in-bse-fin:Equity>
+<in-bse-fin:BorrowingsNoncurrent contextRef="OneI" unitRef="INR" decimals="-7">590200000.00</in-bse-fin:BorrowingsNoncurrent>
+<in-bse-fin:OtherNoncurrentFinancialLiabilities contextRef="OneI" unitRef="INR" decimals="-7">12006200000.00</in-bse-fin:OtherNoncurrentFinancialLiabilities>
+<in-bse-fin:NoncurrentFinancialLiabilities contextRef="OneI" unitRef="INR" decimals="-7">12596400000.00</in-bse-fin:NoncurrentFinancialLiabilities>
+<in-bse-fin:ProvisionsNoncurrent contextRef="OneI" unitRef="INR" decimals="-7">2132400000.00</in-bse-fin:ProvisionsNoncurrent>
+<in-bse-fin:DeferredTaxLiabilitiesNet contextRef="OneI" unitRef="INR" decimals="-7">3614700000.00</in-bse-fin:DeferredTaxLiabilitiesNet>
+<in-bse-fin:OtherNoncurrentLiabilities contextRef="OneI" unitRef="INR" decimals="-7">375900000.00</in-bse-fin:OtherNoncurrentLiabilities>
+<in-bse-fin:NoncurrentLiabilities contextRef="OneI" unitRef="INR" decimals="-7">18719400000.00</in-bse-fin:NoncurrentLiabilities>
+<in-bse-fin:BorrowingsCurrent contextRef="OneI" unitRef="INR" decimals="-7">10390700000.00</in-bse-fin:BorrowingsCurrent>
+<in-bse-fin:TradePayablesCurrent contextRef="OneI" unitRef="INR" decimals="-7">39429100000.00</in-bse-fin:TradePayablesCurrent>
+<in-bse-fin:OtherCurrentFinancialLiabilities contextRef="OneI" unitRef="INR" decimals="-7">25422000000.00</in-bse-fin:OtherCurrentFinancialLiabilities>
+<in-bse-fin:CurrentFinancialLiabilities contextRef="OneI" unitRef="INR" decimals="-7">75241800000.00</in-bse-fin:CurrentFinancialLiabilities>
+<in-bse-fin:OtherCurrentLiabilities contextRef="OneI" unitRef="INR" decimals="-7">4078300000.00</in-bse-fin:OtherCurrentLiabilities>
+<in-bse-fin:ProvisionsCurrent contextRef="OneI" unitRef="INR" decimals="-7">623100000.00</in-bse-fin:ProvisionsCurrent>
+<in-bse-fin:CurrentTaxLiabilities contextRef="OneI" unitRef="INR" decimals="-7">3778400000.00</in-bse-fin:CurrentTaxLiabilities>
+<in-bse-fin:CurrentLiabilities contextRef="OneI" unitRef="INR" decimals="-7">83721600000.00</in-bse-fin:CurrentLiabilities>
+<in-bse-fin:LiabilitiesDirectlyAssociatedWithAssetsInDisposalGroupClassifiedAsHeldForSale contextRef="OneI" unitRef="INR" decimals="-7">0.00</in-bse-fin:LiabilitiesDirectlyAssociatedWithAssetsInDisposalGroupClassifiedAsHeldForSale>
+<in-bse-fin:RegulatoryDeferralAccountCreditBalancesAndRelatedDeferredTaxLiability contextRef="OneI" unitRef="INR" decimals="-7">0.00</in-bse-fin:RegulatoryDeferralAccountCreditBalancesAndRelatedDeferredTaxLiability>
+<in-bse-fin:Liabilities contextRef="OneI" unitRef="INR" decimals="-7">102441000000.00</in-bse-fin:Liabilities>
+<in-bse-fin:EquityAndLiabilities contextRef="OneI" unitRef="INR" decimals="-7">274220100000.00</in-bse-fin:EquityAndLiabilities>
+<in-bse-fin:AdjustmentsForFinanceCosts contextRef="FourD" unitRef="INR" decimals="-7">966500000.00</in-bse-fin:AdjustmentsForFinanceCosts>
+<in-bse-fin:AdjustmentsForDecreaseIncreaseInInventories contextRef="FourD" unitRef="INR" decimals="-7">1536000000.00</in-bse-fin:AdjustmentsForDecreaseIncreaseInInventories>
+<in-bse-fin:AdjustmentsForDecreaseIncreaseInTradeReceivablesCurrent contextRef="FourD" unitRef="INR" decimals="-7">1253800000.00</in-bse-fin:AdjustmentsForDecreaseIncreaseInTradeReceivablesCurrent>
+<in-bse-fin:AdjustmentsForDecreaseIncreaseInTradeReceivablesNoncurrent contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:AdjustmentsForDecreaseIncreaseInTradeReceivablesNoncurrent>
+<in-bse-fin:AdjustmentsForDecreaseIncreaseInOtherCurrentAssets contextRef="FourD" unitRef="INR" decimals="-7">-2013800000.00</in-bse-fin:AdjustmentsForDecreaseIncreaseInOtherCurrentAssets>
+<in-bse-fin:AdjustmentsForDecreaseIncreaseInOtherNoncurrentAssets contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:AdjustmentsForDecreaseIncreaseInOtherNoncurrentAssets>
+<in-bse-fin:AdjustmentsForOtherFinancialAssetsNoncurrent contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:AdjustmentsForOtherFinancialAssetsNoncurrent>
+<in-bse-fin:AdjustmentsForOtherFinancialAssetsCurrent contextRef="FourD" unitRef="INR" decimals="-7">519300000.00</in-bse-fin:AdjustmentsForOtherFinancialAssetsCurrent>
+<in-bse-fin:AdjustmentsForOtherBankBalances contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:AdjustmentsForOtherBankBalances>
+<in-bse-fin:AdjustmentsForIncreaseDecreaseInTradePayablesCurrent contextRef="FourD" unitRef="INR" decimals="-7">1284100000.00</in-bse-fin:AdjustmentsForIncreaseDecreaseInTradePayablesCurrent>
+<in-bse-fin:AdjustmentsForIncreaseDecreaseInTradePayablesNoncurrent contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:AdjustmentsForIncreaseDecreaseInTradePayablesNoncurrent>
+<in-bse-fin:AdjustmentsForIncreaseDecreaseInOtherCurrentLiabilities contextRef="FourD" unitRef="INR" decimals="-7">-789800000.00</in-bse-fin:AdjustmentsForIncreaseDecreaseInOtherCurrentLiabilities>
+<in-bse-fin:AdjustmentsForIncreaseDecreaseInOtherNoncurrentLiabilities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:AdjustmentsForIncreaseDecreaseInOtherNoncurrentLiabilities>
+<in-bse-fin:AdjustmentsForDepreciationAndAmortisationExpense contextRef="FourD" unitRef="INR" decimals="-7">4070400000.00</in-bse-fin:AdjustmentsForDepreciationAndAmortisationExpense>
+<in-bse-fin:AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss>
+<in-bse-fin:AdjustmentsForProvisionsCurrent contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:AdjustmentsForProvisionsCurrent>
+<in-bse-fin:AdjustmentsForProvisionsNoncurrent contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:AdjustmentsForProvisionsNoncurrent>
+<in-bse-fin:AdjustmentsForOtherFinancialLiabilitiesCurrent contextRef="FourD" unitRef="INR" decimals="-7">-1252600000.00</in-bse-fin:AdjustmentsForOtherFinancialLiabilitiesCurrent>
+<in-bse-fin:AdjustmentsForOtherFinancialLiabilitiesNoncurrent contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:AdjustmentsForOtherFinancialLiabilitiesNoncurrent>
+<in-bse-fin:AdjustmentsForUnrealisedForeignExchangeLossesGains contextRef="FourD" unitRef="INR" decimals="-7">-22800000.00</in-bse-fin:AdjustmentsForUnrealisedForeignExchangeLossesGains>
+<in-bse-fin:AdjustmentsForDividendIncome contextRef="FourD" unitRef="INR" decimals="-7">101000000.00</in-bse-fin:AdjustmentsForDividendIncome>
+<in-bse-fin:AdjustmentsForInterestIncome contextRef="FourD" unitRef="INR" decimals="-7">730400000.00</in-bse-fin:AdjustmentsForInterestIncome>
+<in-bse-fin:AdjustmentsForSharebasedPayments contextRef="FourD" unitRef="INR" decimals="-7">98200000.00</in-bse-fin:AdjustmentsForSharebasedPayments>
+<in-bse-fin:AdjustmentsForFairValueGainsLosses contextRef="FourD" unitRef="INR" decimals="-7">-1720600000.00</in-bse-fin:AdjustmentsForFairValueGainsLosses>
+<in-bse-fin:AdjustmentsForUndistributedProfitsOfAssociates contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:AdjustmentsForUndistributedProfitsOfAssociates>
+<in-bse-fin:OtherAdjustmentsForWhichCashEffectsAreInvestingOrFinancingCashFlow contextRef="FourD" unitRef="INR" decimals="-7">-74700000.00</in-bse-fin:OtherAdjustmentsForWhichCashEffectsAreInvestingOrFinancingCashFlow>
+<in-bse-fin:OtherAdjustmentsToReconcileProfitLoss contextRef="FourD" unitRef="INR" decimals="-7">-16400000.00</in-bse-fin:OtherAdjustmentsToReconcileProfitLoss>
+<in-bse-fin:OtherAdjustmentsForNoncashItems contextRef="FourD" unitRef="INR" decimals="-7">705800000.00</in-bse-fin:OtherAdjustmentsForNoncashItems>
+<in-bse-fin:ShareOfProfitAndLossFromPartnershipFirmOrAssociationOfPersonsOrLimitedLiabilityPartnerships contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ShareOfProfitAndLossFromPartnershipFirmOrAssociationOfPersonsOrLimitedLiabilityPartnerships>
+<in-bse-fin:AdjustmentsForReconcileProfitLoss contextRef="FourD" unitRef="INR" decimals="-7">3712000000.00</in-bse-fin:AdjustmentsForReconcileProfitLoss>
+<in-bse-fin:CashFlowsFromUsedInOperations contextRef="FourD" unitRef="INR" decimals="-7">40673000000.00</in-bse-fin:CashFlowsFromUsedInOperations>
+<in-bse-fin:DividendsReceivedClassifiedAsOperatingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:DividendsReceivedClassifiedAsOperatingActivities>
+<in-bse-fin:InterestPaidClassifiedAsOperatingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:InterestPaidClassifiedAsOperatingActivities>
+<in-bse-fin:InterestReceivedClassifiedAsOperatingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:InterestReceivedClassifiedAsOperatingActivities>
+<in-bse-fin:IncomeTaxesPaidRefundClassifiedAsOperatingActivities contextRef="FourD" unitRef="INR" decimals="-7">7166100000.00</in-bse-fin:IncomeTaxesPaidRefundClassifiedAsOperatingActivities>
+<in-bse-fin:OtherInflowsOutflowsOfCashClassifiedAsOperatingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:OtherInflowsOutflowsOfCashClassifiedAsOperatingActivities>
+<in-bse-fin:CashFlowsFromUsedInOperatingActivities contextRef="FourD" unitRef="INR" decimals="-7">33506900000.00</in-bse-fin:CashFlowsFromUsedInOperatingActivities>
+<in-bse-fin:CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities>
+<in-bse-fin:CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">994000000.00</in-bse-fin:CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities>
+<in-bse-fin:OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities>
+<in-bse-fin:OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities>
+<in-bse-fin:OtherCashReceiptsFromSalesOfInterestsInJointVenturesClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:OtherCashReceiptsFromSalesOfInterestsInJointVenturesClassifiedAsInvestingActivities>
+<in-bse-fin:OtherCashPaymentsToAcquireInterestsInJointVenturesClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:OtherCashPaymentsToAcquireInterestsInJointVenturesClassifiedAsInvestingActivities>
+<in-bse-fin:CashReceiptsFromShareOfProfitsOfPartnershipFirmOrAssociationOfPersonsOrLimitedLiabilityPartnerships contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:CashReceiptsFromShareOfProfitsOfPartnershipFirmOrAssociationOfPersonsOrLimitedLiabilityPartnerships>
+<in-bse-fin:CashPaymentForInvestmentInPartnershipFirmOrAssociationOfPersonsOrLimitedLiabilityPartnerships contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:CashPaymentForInvestmentInPartnershipFirmOrAssociationOfPersonsOrLimitedLiabilityPartnerships>
+<in-bse-fin:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">38600000.00</in-bse-fin:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities>
+<in-bse-fin:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">11421100000.00</in-bse-fin:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities>
+<in-bse-fin:ProceedsFromSalesOfInvestmentPropertyClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProceedsFromSalesOfInvestmentPropertyClassifiedAsInvestingActivities>
+<in-bse-fin:PurchaseOfInvestmentPropertyClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:PurchaseOfInvestmentPropertyClassifiedAsInvestingActivities>
+<in-bse-fin:ProceedsFromSalesOfIntangibleAssetsUnderDevelopment contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProceedsFromSalesOfIntangibleAssetsUnderDevelopment>
+<in-bse-fin:PurchaseOfIntangibleAssetsUnderDevelopment contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:PurchaseOfIntangibleAssetsUnderDevelopment>
+<in-bse-fin:ProceedsFromSalesOfGoodwillClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProceedsFromSalesOfGoodwillClassifiedAsInvestingActivities>
+<in-bse-fin:PurchaseOfGoodwillClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:PurchaseOfGoodwillClassifiedAsInvestingActivities>
+<in-bse-fin:ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities>
+<in-bse-fin:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities>
+<in-bse-fin:ProceedsFromBiologicalAssetsOtherThanBearerPlantsClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProceedsFromBiologicalAssetsOtherThanBearerPlantsClassifiedAsInvestingActivities>
+<in-bse-fin:PurchaseOfBiologicalAssetsOtherThanBearerPlantsClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:PurchaseOfBiologicalAssetsOtherThanBearerPlantsClassifiedAsInvestingActivities>
+<in-bse-fin:ProceedsFromSalesOfOtherLongTermAssetsClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">5000000.00</in-bse-fin:ProceedsFromSalesOfOtherLongTermAssetsClassifiedAsInvestingActivities>
+<in-bse-fin:PurchaseOfOtherLongTermAssetsClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">613200000.00</in-bse-fin:PurchaseOfOtherLongTermAssetsClassifiedAsInvestingActivities>
+<in-bse-fin:CashAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:CashAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities>
+<in-bse-fin:CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToOtherPartiesClassifiedAsInvestingActivities>
+<in-bse-fin:CashPaymentsForFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:CashPaymentsForFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities>
+<in-bse-fin:CashReceiptsFromFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:CashReceiptsFromFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities>
+<in-bse-fin:DividendsReceivedClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">528800000.00</in-bse-fin:DividendsReceivedClassifiedAsInvestingActivities>
+<in-bse-fin:InterestReceivedClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">740000000.00</in-bse-fin:InterestReceivedClassifiedAsInvestingActivities>
+<in-bse-fin:IncomeTaxesPaidRefundClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:IncomeTaxesPaidRefundClassifiedAsInvestingActivities>
+<in-bse-fin:OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">3358500000.00</in-bse-fin:OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities>
+<in-bse-fin:ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities>
+<in-bse-fin:CashFlowsFromUsedInInvestingActivities contextRef="FourD" unitRef="INR" decimals="-7">-8357400000.00</in-bse-fin:CashFlowsFromUsedInInvestingActivities>
+<in-bse-fin:ProceedsFromChangesInOwnershipInterestsInSubsidiaries contextRef="FourD" unitRef="INR" decimals="-7">115700000.00</in-bse-fin:ProceedsFromChangesInOwnershipInterestsInSubsidiaries>
+<in-bse-fin:PaymentsFromChangesInOwnershipInterestsInSubsidiaries contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:PaymentsFromChangesInOwnershipInterestsInSubsidiaries>
+<in-bse-fin:ProceedsFromIssuingSharesClassifiedAsFinancingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProceedsFromIssuingSharesClassifiedAsFinancingActivities>
+<in-bse-fin:ProceedsFromIssuingOtherEquityInstruments contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProceedsFromIssuingOtherEquityInstruments>
+<in-bse-fin:PaymentsToAcquireOrRedeemEntitysShares contextRef="FourD" unitRef="INR" decimals="-7">-8200000.00</in-bse-fin:PaymentsToAcquireOrRedeemEntitysShares>
+<in-bse-fin:PaymentsOfOtherEquityInstruments contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:PaymentsOfOtherEquityInstruments>
+<in-bse-fin:ProceedsFromExerciseOfStockOptions contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProceedsFromExerciseOfStockOptions>
+<in-bse-fin:ProceedsFromIssuingDebenturesNotesBondsEtc contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:ProceedsFromIssuingDebenturesNotesBondsEtc>
+<in-bse-fin:ProceedsFromBorrowingsClassifiedAsFinancingActivities contextRef="FourD" unitRef="INR" decimals="-7">758000000.00</in-bse-fin:ProceedsFromBorrowingsClassifiedAsFinancingActivities>
+<in-bse-fin:RepaymentsOfBorrowingsClassifiedAsFinancingActivities contextRef="FourD" unitRef="INR" decimals="-7">106500000.00</in-bse-fin:RepaymentsOfBorrowingsClassifiedAsFinancingActivities>
+<in-bse-fin:PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities>
+<in-bse-fin:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities contextRef="FourD" unitRef="INR" decimals="-7">1445100000.00</in-bse-fin:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities>
+<in-bse-fin:DividendsPaidClassifiedAsFinancingActivities contextRef="FourD" unitRef="INR" decimals="-7">20400300000.00</in-bse-fin:DividendsPaidClassifiedAsFinancingActivities>
+<in-bse-fin:InterestPaidClassifiedAsFinancingActivities contextRef="FourD" unitRef="INR" decimals="-7">899600000.00</in-bse-fin:InterestPaidClassifiedAsFinancingActivities>
+<in-bse-fin:IncomeTaxesPaidRefundClassifiedAsFinancingActivities contextRef="FourD" unitRef="INR" decimals="-7">0.00</in-bse-fin:IncomeTaxesPaidRefundClassifiedAsFinancingActivities>
+<in-bse-fin:OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities contextRef="FourD" unitRef="INR" decimals="-7">1693100000.00</in-bse-fin:OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities>
+<in-bse-fin:CashFlowsFromUsedInFinancingActivities contextRef="FourD" unitRef="INR" decimals="-7">-20276500000.00</in-bse-fin:CashFlowsFromUsedInFinancingActivities>
+<in-bse-fin:IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges contextRef="FourD" unitRef="INR" decimals="-7">4873000000.00</in-bse-fin:IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges>
+<in-bse-fin:EffectOfExchangeRateChangesOnCashAndCashEquivalents contextRef="FourD" unitRef="INR" decimals="-7">11700000.00</in-bse-fin:EffectOfExchangeRateChangesOnCashAndCashEquivalents>
+<in-bse-fin:IncreaseDecreaseInCashAndCashEquivalents contextRef="FourD" unitRef="INR" decimals="-7">4884700000.00</in-bse-fin:IncreaseDecreaseInCashAndCashEquivalents>
+<in-bse-fin:CashAndCashEquivalentsCashFlowStatement contextRef="FourD" unitRef="INR" decimals="-7">30543300000.00</in-bse-fin:CashAndCashEquivalentsCashFlowStatement>
+<in-bse-fin:CashAndCashEquivalentsCashFlowStatement contextRef="FourD" unitRef="INR" decimals="-7">35428000000.00</in-bse-fin:CashAndCashEquivalentsCashFlowStatement>
+<in-bse-fin:DescriptionOfItemThatWillNotBeReclassifiedToProfitAndLoss contextRef="OneItemsThatWillNotBeReclassifiedToProfitAndLoss01D">Items that will not be reclassified to profit or loss</in-bse-fin:DescriptionOfItemThatWillNotBeReclassifiedToProfitAndLoss>
+<in-bse-fin:AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss contextRef="OneItemsThatWillNotBeReclassifiedToProfitAndLoss01D" unitRef="INR" decimals="-7">40100000.00</in-bse-fin:AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss>
+<in-bse-fin:DescriptionOfItemThatWillNotBeReclassifiedToProfitAndLoss contextRef="FourItemsThatWillNotBeReclassifiedToProfitAndLoss01D">Items that will not be reclassified to profit or loss</in-bse-fin:DescriptionOfItemThatWillNotBeReclassifiedToProfitAndLoss>
+<in-bse-fin:AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss contextRef="FourItemsThatWillNotBeReclassifiedToProfitAndLoss01D" unitRef="INR" decimals="-7">427900000.00</in-bse-fin:AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss>
+<in-bse-fin:AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss contextRef="OneD" unitRef="INR" decimals="-7">40100000.00</in-bse-fin:AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss>
+<in-bse-fin:AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss contextRef="FourD" unitRef="INR" decimals="-7">427900000.00</in-bse-fin:AmountOfItemThatWillNotBeReclassifiedToProfitAndLoss>
+<in-bse-fin:IncomeTaxRelatingToItmesThatWillNotBeReclassifiedToProfitOrLoss contextRef="OneD" unitRef="INR" decimals="-7">5500000.00</in-bse-fin:IncomeTaxRelatingToItmesThatWillNotBeReclassifiedToProfitOrLoss>
+<in-bse-fin:IncomeTaxRelatingToItmesThatWillNotBeReclassifiedToProfitOrLoss contextRef="FourD" unitRef="INR" decimals="-7">55200000.00</in-bse-fin:IncomeTaxRelatingToItmesThatWillNotBeReclassifiedToProfitOrLoss>
+<in-bse-fin:DescriptionOfItemThatWillBeReclassifiedToProfitAndLoss contextRef="OneItemsThatWillBeReclassifiedToProfitAndLoss01D">Items that will be reclassified to profit or loss</in-bse-fin:DescriptionOfItemThatWillBeReclassifiedToProfitAndLoss>
+<in-bse-fin:AmountOfItemThatWillBeReclassifiedToProfitAndLoss contextRef="OneItemsThatWillBeReclassifiedToProfitAndLoss01D" unitRef="INR" decimals="-7">-36500000.00</in-bse-fin:AmountOfItemThatWillBeReclassifiedToProfitAndLoss>
+<in-bse-fin:DescriptionOfItemThatWillBeReclassifiedToProfitAndLoss contextRef="FourItemsThatWillBeReclassifiedToProfitAndLoss01D">Items that will be reclassified to profit or loss</in-bse-fin:DescriptionOfItemThatWillBeReclassifiedToProfitAndLoss>
+<in-bse-fin:AmountOfItemThatWillBeReclassifiedToProfitAndLoss contextRef="FourItemsThatWillBeReclassifiedToProfitAndLoss01D" unitRef="INR" decimals="-7">237300000.00</in-bse-fin:AmountOfItemThatWillBeReclassifiedToProfitAndLoss>
+<in-bse-fin:AmountOfItemThatWillBeReclassifiedToProfitAndLoss contextRef="OneD" unitRef="INR" decimals="-7">-36500000.00</in-bse-fin:AmountOfItemThatWillBeReclassifiedToProfitAndLoss>
+<in-bse-fin:AmountOfItemThatWillBeReclassifiedToProfitAndLoss contextRef="FourD" unitRef="INR" decimals="-7">237300000.00</in-bse-fin:AmountOfItemThatWillBeReclassifiedToProfitAndLoss>
+<in-bse-fin:IncomeTaxRelatingToItmesThatWillBeReclassifiedToProfitOrLoss contextRef="OneD" unitRef="INR" decimals="-7">4400000.00</in-bse-fin:IncomeTaxRelatingToItmesThatWillBeReclassifiedToProfitOrLoss>
+<in-bse-fin:IncomeTaxRelatingToItmesThatWillBeReclassifiedToProfitOrLoss contextRef="FourD" unitRef="INR" decimals="-7">10600000.00</in-bse-fin:IncomeTaxRelatingToItmesThatWillBeReclassifiedToProfitOrLoss>
+</xbrli:xbrl>
