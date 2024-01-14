@@ -9,6 +9,7 @@ class XBRLCorporateFilingParser:
         self.currency_unit = currency_unit
         tree = ET.ElementTree(ET.fromstring(xbrl_str))
         root = tree.getroot()
+        self.type = ''
 
         pattern = r'[{}]'
         count = 0
@@ -16,30 +17,45 @@ class XBRLCorporateFilingParser:
         for child in root:
             tags = re.split(pattern, child.tag)
             attributes = child.attrib
+
             if 'in-bse-fin' in tags[1]:
-                row = {'Tags': tags[-1]}
-                for key, val in attributes.items():
-                    row[key] = val
-                row['Value'] = str(child.text)
-                rowlist.append(row)
-                count += 1
-                if self.verbosity == 2:
-                    print("Row appended:")
-                    print(row, '\n')
+                self.type = 'fin'
+            elif 'in-bse-shp' in tags[1]:
+                self.type = 'shp'
+
+            row = {'Tags': tags[-1]}
+            for key, val in attributes.items():
+                row[key] = val
+            row['Value'] = str(child.text)
+            rowlist.append(row)
+            count += 1
+            if self.verbosity == 2:
+                print("Row appended:")
+                print(row, '\n')
+
         self.parsedDataFrame = pd.DataFrame(rowlist).reset_index(drop=False)
 
+        # to get the attribute map
         attributeFile = r"..\data\nse_xbrl_attribute_map.xlsx"
-        self.attributeMap = pd.read_excel(attributeFile)
+        if self.type == 'fin':
+            self.attributeMap = pd.read_excel(attributeFile, sheet_name='attribute_map_fr')
+            self.resultType = self.parsedDataFrame.loc[self.parsedDataFrame.Tags == 'ResultType'] \
+                .Value.reset_index(drop=True)
+            if len(self.resultType) == 0:
+                self.resultType = 'default'
+            else:
+                self.resultType = self.resultType[0]
 
-        self.resultType = self.parsedDataFrame.loc[self.parsedDataFrame.Tags == 'ResultType'] \
-            .Value.reset_index(drop=True)
-        if len(self.resultType) == 0:
-            self.resultType = 'default'
-        else:
-            self.resultType = self.resultType[0]
+        elif self.type == 'shp':
+            self.attributeMap = pd.read_excel(attributeFile, sheet_name='attribute_map_shp')
+            self.resultType = 'any'
 
+        # to get the dataframe which has the result types
         self.attribute_df = self.attributeMap.loc[
             self.attributeMap['result_type'].str.contains(self.resultType, na=False)]
+
+        # save to csv
+        self.parsedDataFrame.to_csv(r"..\output\xbrl_data.csv")
 
         if self.verbosity >= 1:
             print("Root tag:", root.tag)
@@ -50,7 +66,7 @@ class XBRLCorporateFilingParser:
             print(self.attribute_df)
         if self.verbosity == 2:
             for i in rowlist:
-                print("Current row: ",i)
+                print("Current row: ", i)
 
     def calcXbrl_recursion(self, attribute, context):
         formula = self.attribute_df.loc[(self.attribute_df.attribute == attribute) &
@@ -62,12 +78,24 @@ class XBRLCorporateFilingParser:
 
         operands = dict(zip(self.attribute_df.attribute, self.attribute_df.attribute_type))
 
+        if self.verbosity >= 1:
+            print("attribute_df:")
+            print(self.attribute_df)
+            print("Formula:", formulaList)
+            print("Operands: ")
+            print(operands)
+
         for val in formulaList:
             if val in list(operands.keys()) and operands[val] == 'raw_xbrl':
                 actualAttribute = self.attribute_df.loc[(self.attribute_df.attribute == val) &
                                                         (self.attribute_df['result_type'].str.contains(self.resultType,
                                                                                                        na=False))] \
                     .value_expr.reset_index(drop=True)[0]
+                if self.verbosity >= 1:
+                    print("series for numVal:")
+                    print(self.parsedDataFrame.loc[(self.parsedDataFrame.Tags == actualAttribute) &
+                                                   (self.parsedDataFrame.contextRef == context)].Value.reset_index(
+                        drop=True))
 
                 numVal = self.parsedDataFrame.loc[(self.parsedDataFrame.Tags == actualAttribute) &
                                                   (self.parsedDataFrame.contextRef == context)].Value.reset_index(
@@ -87,6 +115,7 @@ class XBRLCorporateFilingParser:
         return eval(formulaString)
 
     def get(self, attribute, context):
+        # attribute map with particular attribute & result type
         x = self.attribute_df.loc[(self.attribute_df.attribute == attribute) &
                                   (self.attributeMap['result_type'].str.contains(self.resultType, na=False))] \
             .reset_index(drop=True)
@@ -96,7 +125,8 @@ class XBRLCorporateFilingParser:
 
         if x.attribute_type[0] == 'raw_xbrl':
             attributeName = self.attribute_df.loc[(self.attribute_df.attribute == attribute) &
-                                                  (self.attribute_df['result_type'].str.contains(self.resultType, na=False))] \
+                                                  (self.attribute_df['result_type'].str.contains(self.resultType,
+                                                                                                 na=False))] \
                 .value_expr.reset_index(drop=True)
 
             if attributeName[0] == "ResultType" and self.resultType == 'default':
@@ -104,13 +134,13 @@ class XBRLCorporateFilingParser:
             else:
                 data = self.parsedDataFrame.loc[(self.parsedDataFrame.Tags == attributeName[0]) &
                                                 (self.parsedDataFrame.contextRef == context)].reset_index(drop=True)
+                resultValue = data.Value[0]
                 if self.verbosity >= 1:
                     print('Attribute: ', attribute)
                     print('Actual attribute: ', attributeName[0])
                     print('Context: ', context)
                     print("Data:")
                     print(data)
-                resultValue = data.Value[0]
 
         elif x.attribute_type[0] == 'calc_xbrl':
             resultValue = self.calcXbrl_recursion(x.attribute[0], context)
@@ -127,6 +157,8 @@ class XBRLCorporateFilingParser:
             return round(float(resultValue), 2)
         elif x.value_type[0] == 'int':
             return int(float(resultValue))
+        elif x.value_type[0] == 'boolean':
+            return bool(resultValue)
 
 
 if __name__ == '__main__':
