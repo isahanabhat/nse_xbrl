@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import re
 import pandas as pd
-
+import os
 
 class XBRLCorporateFilingParser:
     def __init__(self, symbol, xbrl_str, exchange='nse', currency_unit=1E6, verbosity=0):
@@ -36,7 +36,14 @@ class XBRLCorporateFilingParser:
         self.parsedDataFrame = pd.DataFrame(rowlist).reset_index(drop=False)
 
         # to get the attribute map
-        attributeFile = r"..\data\nse_xbrl_attribute_map.xlsx"
+        full_path = os.path.abspath(__file__)
+        path_parts = full_path.split("\\")
+        base_path= ""
+        for i in range(0, len(path_parts) - 2):
+            base_path += path_parts[i] +"\\"
+        # print(base_path)
+        attributeFile = base_path + r"data\nse_xbrl_attribute_map.xlsx"
+
         if self.type == 'fin':
             self.attributeMap = pd.read_excel(attributeFile, sheet_name='attribute_map_fr')
             self.resultType = self.parsedDataFrame.loc[self.parsedDataFrame.Tags == 'ResultType'] \
@@ -55,12 +62,15 @@ class XBRLCorporateFilingParser:
             self.attributeMap['result_type'].str.contains(self.resultType, na=False)]
 
         # save to csv
-        self.parsedDataFrame.to_csv(r"..\output\xbrl_data.csv")
+        output_file = base_path + r"output\xbrl_data_1.csv"
+        scr_output_file = base_path + r"output\xbrl_data_1.csv"
+        self.parsedDataFrame.to_csv(scr_output_file)
 
         if self.verbosity >= 1:
             print("Root tag:", root.tag)
             print("Root attribute:", root.attrib)
             print('Result type: ', self.resultType)
+            print("Type = ", self.type)
             print("Count = ", count)
             print("attribute_df: ")
             print(self.attribute_df)
@@ -136,10 +146,10 @@ class XBRLCorporateFilingParser:
                                                 (self.parsedDataFrame.contextRef == context)].reset_index(drop=True)
                 resultValue = data.Value[0]
                 if self.verbosity >= 1:
-                    print('Attribute: ', attribute)
-                    print('Actual attribute: ', attributeName[0])
-                    print('Context: ', context)
-                    print("Data:")
+                    print('\nAttribute: ', attribute)
+                    print('\nActual attribute: ', attributeName[0])
+                    print('\nContext: ', context)
+                    print("\nData:")
                     print(data)
 
         elif x.attribute_type[0] == 'calc_xbrl':
@@ -150,6 +160,7 @@ class XBRLCorporateFilingParser:
             return float('nan')
 
         if x.value_type[0] == 'string':
+            print("Result (string) = ", resultValue)
             return str(resultValue)
         elif x.value_type[0] == 'float':
             return round((float(resultValue)) / self.currency_unit, 2)
@@ -158,7 +169,43 @@ class XBRLCorporateFilingParser:
         elif x.value_type[0] == 'int':
             return int(float(resultValue))
         elif x.value_type[0] == 'boolean':
+            print("Result (bool) = ", resultValue)
             return bool(resultValue)
+
+    def get_contexts(self, attribute):
+        x = self.attribute_df.loc[(self.attribute_df.attribute == attribute) &
+                                  (self.attributeMap['result_type'].str.contains(self.resultType, na=False))] \
+            .reset_index(drop=True)
+        if self.verbosity >= 1:
+            print("ATTRIBUTE = ", attribute)
+            print("\n\nX dataframe: ")
+            print(x)
+        attributeName = self.attribute_df.loc[(self.attribute_df.attribute == attribute)&
+                                              (self.attribute_df['result_type'].str.contains(self.resultType, na=False))] \
+            .value_expr.reset_index(drop=True)
+
+
+        data = self.parsedDataFrame.loc[(self.parsedDataFrame.Tags == attributeName[0])].reset_index(drop=True)
+        if self.verbosity >= 1:
+            print("attributeName[0] = ", attributeName[0])
+            print('\nAttribute: ', attribute)
+            print('Actual attribute: ', attributeName[0])
+            print("Data:")
+            print(data)
+            print("\ncolumns = ", data.columns)
+        return data["contextRef"].unique()
+
+    def get_all_attributes(self):
+        context_list = list(self.parsedDataFrame["contextRef"].unique())
+        raw_data_dict = {}
+        for context in context_list:
+            data = self.parsedDataFrame.loc[self.parsedDataFrame["contextRef"] == context][["Tags", "Value"]].reset_index(drop=True)
+            # print("\n",data)
+            item = {}
+            for row in data.itertuples():
+                item[row.Tags] = row.Value
+            raw_data_dict[context] = item
+        return raw_data_dict
 
 
 if __name__ == '__main__':

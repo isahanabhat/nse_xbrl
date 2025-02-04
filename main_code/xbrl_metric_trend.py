@@ -1,11 +1,20 @@
-from main_code import xbrl_parser
+from nse_xbrl.main_code import xbrl_parser
 import pandas as pd
+import os
 
 class MetricTrend:
-    def __init__(self, listOfData, verbosity=0):
+    def __init__(self, listOfData, verbosity=1):
         self.verbosity = verbosity
         self.infoDict = []
-        file = r"..\data\nse_xbrl_attribute_map.xlsx"
+
+        full_path = os.path.abspath(__file__)
+        path_parts = full_path.split("\\")
+        base_path = ""
+        for i in range(0, len(path_parts) - 2):
+            base_path += path_parts[i] + "\\"
+        # print(base_path)
+
+        file = base_path + r"data\nse_xbrl_attribute_map.xlsx"
         self.attributeMap = pd.read_excel(file, sheet_name='attribute_map_shp')
         self.resultType = 'any'
 
@@ -37,9 +46,13 @@ class MetricTrend:
             self.infoDict.append(parsedDataDict)
 
             if self.verbosity >= 1:
-                print(dataframe.loc[dataframe.Tags == 'DateOfReport'])
+                print("Attribute Name = ", attributeName)
+                print("---------------------------------------")
+                print("next part\n",dataframe.loc[dataframe.Tags == 'DateOfReport'])
+                print("---------------------------------------")
                 print("Parsed dict: ")
                 print(parsedDataDict)
+                print("---------------------------------------")
         if self.verbosity == 2:
             print("Total list content:")
             print(self.infoDict)
