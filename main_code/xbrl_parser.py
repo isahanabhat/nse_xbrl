@@ -62,9 +62,12 @@ class XBRLCorporateFilingParser:
             self.attributeMap['result_type'].str.contains(self.resultType, na=False)]
 
         # save to csv
-        output_file = base_path + r"output\xbrl_data_1.csv"
+        directory = base_path + r"output"
+        if not os.path.exists(directory):
+            os.mkdir(directory)
         scr_output_file = base_path + r"output\xbrl_data_1.csv"
-        self.parsedDataFrame.to_csv(scr_output_file)
+        if self.verbosity >= 1:
+            self.parsedDataFrame.to_csv(scr_output_file)
 
         if self.verbosity >= 1:
             print("Root tag:", root.tag)
@@ -160,7 +163,8 @@ class XBRLCorporateFilingParser:
             return float('nan')
 
         if x.value_type[0] == 'string':
-            print("Result (string) = ", resultValue)
+            if self.verbosity >= 1:
+                print("Result (string) = ", resultValue)
             return str(resultValue)
         elif x.value_type[0] == 'float':
             return round((float(resultValue)) / self.currency_unit, 2)
@@ -169,7 +173,8 @@ class XBRLCorporateFilingParser:
         elif x.value_type[0] == 'int':
             return int(float(resultValue))
         elif x.value_type[0] == 'boolean':
-            print("Result (bool) = ", resultValue)
+            if self.verbosity >= 1:
+                print("Result (bool) = ", resultValue)
             return bool(resultValue)
 
     def get_contexts(self, attribute):
